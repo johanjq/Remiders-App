@@ -16,14 +16,12 @@ todosController.createTodo = async (req, res) => {
     author
   });
   await newTodo.save();
-  console.log(newTodo);
   res.json({ message: "Todo saved" });
 };
 
 todosController.getTodo = async (req, res) => {
   const { id } = req.params;
   const todo = await TodoModel.findById(id);
-  console.log(todo);
   res.json(todo);
 };
 
