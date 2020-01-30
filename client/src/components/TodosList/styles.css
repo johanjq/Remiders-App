@@ -1,0 +1,6 @@
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+.TodoList__TaskCompleted {
+  margin-top: 0.5rem;
+}
