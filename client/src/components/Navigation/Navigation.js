@@ -1,20 +1,11 @@
 import React from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
-import MosaicLogo from "../../assets/mosaicLogo.png";
 
 export const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <a
-          className="Navigation__MosaicLogo"
-          href="http://www.mosaic.ie/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={MosaicLogo} alt="Mosaic" />
-        </a>
         <Link className="navbar-brand" to="/">
           Todo App
         </Link>
